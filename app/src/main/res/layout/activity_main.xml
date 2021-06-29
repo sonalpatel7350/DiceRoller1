@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#EAD73E"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvdice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="#ECE07F"
+        android:text="Dice Roller"
+        android:textColor="#EA2222"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgdice"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvdice"
+        app:layout_constraintStart_toStartOf="@+id/tvdice"
+        app:layout_constraintTop_toBottomOf="@+id/tvdice"
+        app:srcCompat="@drawable/dice1" />
+
+    <Button
+        android:id="@+id/btnrollnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:backgroundTint="#ECE07F"
+        android:text="Roll Now"
+        android:textColor="#E12020"
+        app:layout_constraintEnd_toEndOf="@+id/imgdice"
+        app:layout_constraintStart_toStartOf="@+id/imgdice"
+        app:layout_constraintTop_toBottomOf="@+id/imgdice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
